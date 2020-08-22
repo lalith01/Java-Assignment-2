@@ -1,0 +1,7 @@
+Q9: Why is it said that searching a node in a binary search tree is efficient than that of simple binary
+tree.
+
+Ans: Using a binary search tree, length of tree traversal is reduced by comparing the search value with
+the root. The traversal path is reduced using this comparison , if the search value is greater than the root
+then the right side is traversed and left side is traversed in case of lower value.
+Hence the searching complexity of binary tree O(n) is reduced to O(h) where h is the height of the tree.

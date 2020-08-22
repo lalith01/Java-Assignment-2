@@ -1,0 +1,5 @@
+Q14: Which data structure is ideal to perform recursion operation and why?
+
+Ans: Stacks are used to perform recursion as function on the top of the stack can executed , the function
+can be popped and the data can be passed to the next function, this cycle continues until the required
+data is passed to the original function.

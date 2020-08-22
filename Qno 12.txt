@@ -1,0 +1,4 @@
+Q12: When can you tell that a Memory Leak will occur?
+
+Ans: A memory leak will occur when the unused objects aren’t destroyed to free up the memory held
+by them.

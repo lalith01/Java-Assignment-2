@@ -1,0 +1,5 @@
+Q6: What is the difference between an array and stack?
+
+Ans: The main difference between an array and stack is how they return the values, in an array we can
+access an index of an element and get the data whereas in a stack, the data is returned in a first in last
+out fashion, that is that the data that went in first is the last in order when we get data from the stack.

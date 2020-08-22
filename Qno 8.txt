@@ -1,0 +1,6 @@
+Q8: What are different types of tree traversal techniques in a tree?
+
+Ans: Tree traversal techniques are:
+1. Inorder traversal (Left → Root → Right)
+2. Pre order traversal (Root → Left → Right)
+3. Post order traversal (Left→ Right → Root)

@@ -1,0 +1,4 @@
+Q11: Can we use binary search algorithm to a sorted linked list?
+
+Ans : We cannot apply binary search algorithm to a sorted linked list because the binary search heavily
+relies on indexes , and the overhead to bootstrap an index system defeats the purpose.

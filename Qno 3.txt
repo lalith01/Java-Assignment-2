@@ -1,0 +1,5 @@
+Q3. What are the advantages of a Linked List over an array?
+Ans: The size of a linked list is dynamic whereas for an array it is static. Linked Lists can also store
+generic objects where as for an array the data types of its constituents should be the same. Linked Lists
+are also flexible and we can create other data structures such as circular linked lists, doubly linked lists
+etc.

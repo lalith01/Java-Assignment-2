@@ -1,0 +1,3 @@
+Q7: Minimum number of queues required to implement a priority queue?
+
+Ans: 2 Queues are required , one for storing data and one for the priorities.

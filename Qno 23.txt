@@ -1,0 +1,6 @@
+Q23: Check if a given graph is a tree or not?
+
+Ans : To check if a given graph is a tree or not, we have to check if the graph contains a cycle. A a
+graph is a tree if it doesn’t contain a cycle. Since it is not mentioned if it is a directed or un-directed
+graph, a particular cycle detection algorithm can’t be prescribed but techniques used to detect cycle are
+BFS or DFS cycle detection algorithm and Topological sorting.

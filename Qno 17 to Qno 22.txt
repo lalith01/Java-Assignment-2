@@ -1,0 +1,115 @@
+Q17 : Sorting a stack using a temporary stack
+Ans:
+public Stack<Integer> sortStack(Stack<Integer> stack){
+ Stack<Integer> temp = new Stack<>();
+ while(!stack.isEmpty()){
+ int currentVal = stack.pop();
+ if(temp.isEmpty() || temp.peek() < currentVal){
+ temp.push(currentVal);
+ }else{
+ while(temp.peek()>currentVal){
+ stack.push(temp.pop());
+ }
+ temp.push(currentVal);
+ }
+ }
+ while(!temp.isEmpty()){
+ stack.push(temp.pop());
+ }
+ return stack;
+}
+
+Q18: Program to reverse a queue
+public Queue<Integer> reverseQueue(Queue<Integer> s){
+Stack<Integer> stack = new Stack<>();
+while(!s.isEmpty()){
+stack.push(s.poll());
+}
+while(!stack.isEmpty()){
+s.add(stack.pop());
+}
+return s;
+}
+
+Q19: Program to reverse first k elements of a queue
+Ans : public Queue<Integer> reverseK(Queue<Integer> queue, int k){
+Queue<Integer> newQueue = new LinkedList<>();
+Stack<Integer> stack = new Stack<>();
+while(k-- >0 ){
+stack.push(queue.poll());
+}
+while(!stack.isEmpty()){
+newQueue.add(stack.pop());
+}
+while(!queue.isEmpty()){
+newQueue.add(queue.poll());
+}
+return newQueue;
+}
+
+Q20: Program to return the nth node from the end in a linked lis
+Ans : public int getLength(Node n,int k){
+if(n == null){
+return k;
+}
+return getLength(n.next, k+1);
+}
+public int nthNode(Node n, int nth){
+int getLengthFromStart = getLength(n,0) – nth;
+int ret = 0;
+Node current = n;
+while(getLengthFromStart-- > 0){
+ret = Node.data;
+current = current.next;
+}
+return ret;
+}
+
+Q21 : Reverse a linked list
+Ans: class Node{
+ Node next;
+ int i;
+ public Node(){
+ next = null;
+ }
+ public Node(int i){
+ this.i = i;
+ this.next = null;
+ }
+}
+public Node reverseNode(Node n){
+ Node prev = null;
+ Node current = n;
+ while(n != null){
+ Node revNode = new Node();
+ revNode.i = n.i;
+ revNode.next = prev;
+ prev = revNode;
+ n = n.next;
+ }
+ return prev;
+}
+
+Q22: Replace each element of the array by its rank in the array.
+Ans: static void changeArr(int[] input)
+{
+int newArray[] = new int[input.length];
+for(int I = 0 ; I < input.length ; i++){
+newArray[i] = input[i];
+}
+Arrays.sort(newArray);
+int i = 0;
+Map<Integer, Integer> ranks = new HashMap<>();
+int rank = 1;
+for (int index = 0; index < newArray.length; index++) {
+int element = newArray[index];
+if (ranks.get(element) == null) {
+ranks.put(element, rank);
+rank++;
+}
+}
+for (int index = 0; index < input.length; index++) {
+int element = input[index];
+input[index] = ranks.get(input[index]);
+}
+} 

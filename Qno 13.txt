@@ -1,0 +1,4 @@
+Q13: How will you check if a given Binary Tree is a binary search tree or not?
+
+Ans: If the max of the left subtree is less than the root and minimum of right subtree is greater than the
+node it is a binary search tree.

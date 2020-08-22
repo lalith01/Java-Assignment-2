@@ -1,0 +1,4 @@
+Q10: What are the applications of Graph DS?
+
+Ans: Graph DS is used to model scenarios where a component has relations with multiple components.
+Graph DS is used for modelling networks such as social media networks etc.

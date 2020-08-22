@@ -1,0 +1,4 @@
+Q5: What is the use of a doubly-linked list when compared to that of a single linked list?
+
+Ans: A doubly linked list can be traversed bidirectionally therefore it saves the overhead of traversal in
+cases when we roughly know the place of an element.

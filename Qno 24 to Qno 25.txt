@@ -1,0 +1,11 @@
+Q24: Find out the Kth smallest element in an unsorted array?
+Ans: public int kthElement(int[] array , int k){
+Arrays.sort(array);
+return array[k-1];
+}
+
+
+Q25: How to find the shortest path between two vertices?
+Ans: Shortest path between two vertices is determined by using a shortest path algorithm called
+Dijkstra’s Algorithm.
+Dijkstra’s Algorithm is also called single source shortest path algorithm.

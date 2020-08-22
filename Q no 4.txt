@@ -1,0 +1,6 @@
+Q4: Syntax to create a linked list node in C?
+
+Ans: typedef struct Node{
+ struct Node *next;
+ int data;
+};

@@ -1,0 +1,4 @@
+Q15: Most important applications of Stack?
+
+Ans : Stacks are used to implement recursion, can be used to balance parenthesis and is used to
+implement calculations following BODMAS rule .

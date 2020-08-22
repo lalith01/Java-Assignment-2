@@ -1,0 +1,6 @@
+Q2: What are some applications of DS?
+
+Data structure are used to store and manage data. For example. Lists are used to store data and
+objects of same type . Maps are used to store key value pairs and can be used for dictionary purposes.
+Trees are used to represent hierarchical structures such as file trees and stack is used to manage
+function calls
